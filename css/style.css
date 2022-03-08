@@ -36,8 +36,14 @@ body{
     gap: 4rem;
 }
 
+.timerTextWrapper{
+    width:100%;
+    text-align: center;
+
+
+}
 .timerText{
-    font-size: 200%;
+    font-size:400%;
 }
 .button{
     padding:1rem 2rem;
