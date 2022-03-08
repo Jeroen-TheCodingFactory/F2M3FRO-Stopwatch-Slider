@@ -21,8 +21,9 @@ body{
 }
 
 .card{
-    width: 40rem;
-    height:40rem;
+    padding:4rem;
+    min-width: 40rem;
+    min-height:40rem;
     border-radius: 5rem;
     box-shadow: 0 1rem 2rem 0px rgba(0,0,0,0.2);
     flex-shrink: 0;
@@ -36,6 +37,17 @@ body{
     gap: 4rem;
 }
 
+.card--range{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:4rem;
+    gap: 4rem;
+    flex-direction: column;
+    font-size: 400%;
+    font-weight: 400;
+}   
+
 .timerTextWrapper{
     width:100%;
     text-align: center;
@@ -43,13 +55,37 @@ body{
 
 }
 .timerText{
-    font-size:400%;
+    font-size:200%;
 }
+
+.slider{
+    -webkit-appearance: none;
+    appearance: none;
+    width:100%;
+    border-radius:5rem;
+    background: #00d2ff;
+}
+
+  .slider::-moz-range-thumb {
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    background: #00d2ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    outline:none;
+    border-radius:50%;
+    border:none;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0,0.2);
+  }
+
 .button{
     padding:1rem 2rem;
     font-size: 2rem;
     border-radius: 0.5rem;
     color:white;
+    font-size: 100%;
 }
 
 .button--start{
