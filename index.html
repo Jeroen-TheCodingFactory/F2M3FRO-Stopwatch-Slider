@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,24 +9,25 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
 </head>
+
 <body>
-    <article class="card card--range">
+    <article class="card card--range a-left">
         <h2 id="js--rangeValue"></h2>
-        <input class="slider" id="js--range" type="range"
-        min="1" max="4" step="1">
+        <input class="slider" id="js--range" value="2" type="range" min="1" max="4" step="1">
     </article>
-    <article class="card"></article>
-    <article class="card card--stopwatch">
+    <article class="card a-top"></article>
+    <article class="card card--stopwatch a-right">
         <div class="timerTextWrapper">
             <span class="timerText" id="js--minutesTimer">00</span>
-            <span class="timerText" >:</span>
-            <span class="timerText"  id="js--secondsTimer">00</span>
+            <span class="timerText">:</span>
+            <span class="timerText" id="js--secondsTimer">00</span>
         </div>
         <section class="buttonWrapper">
-            <button class="button button--start"  id="js--start">Start</button>
+            <button class="button button--start" id="js--start">Start</button>
             <button class="button button--stop" id="js--stop">Stop</button>
             <button id="js--reset" class="button button--reset">Reset</button>
         </section>
     </article>
 </body>
+
 </html>

@@ -99,3 +99,52 @@ body{
 .button--reset{
     background: #5463FF;
 }
+
+.a-top, .a-left, .a-right{
+    animation-duration: 0.8s;
+}
+
+.a-top{
+    animation-name: top;
+}
+
+.a-left{
+    animation-name: left;
+}
+
+.a-right{
+    animation-name: right;
+}
+
+@keyframes top {
+    from{
+        opacity:0;
+        transform: translateY(-50px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes left {
+    from{
+        opacity:0;
+        transform: translateX(-20px);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes right {
+    from{
+        opacity:0;
+        transform: translateX(20px);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0);
+    }
+}
